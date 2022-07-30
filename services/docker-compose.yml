@@ -22,7 +22,9 @@ services:
       - 80:80
     volumes:
       - ./traefik/:/etc/traefik/
-      - /var/run/docker.sock:/var/run/docker.sock
     depends_on:
       - api-hola
       - api-hello
+    links:
+      - api-hello:link-api-hello
+      - api-hola:link-api-hola

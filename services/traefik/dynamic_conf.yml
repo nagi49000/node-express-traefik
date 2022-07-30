@@ -1,0 +1,17 @@
+http:
+  services:
+    service-api-hello:
+      loadBalancer:
+        servers:
+          - url: "http://link-api-hello:6780"
+    service-api-hola:
+      loadBalancer:
+        servers:
+          - url: "http://link-api-hola:6781"
+  routers:
+    api-hello:
+      rule: "PathPrefix(`/api-hello`)"
+      service: service-api-hello
+    api-hola:
+      rule: "PathPrefix(`/api-hola`)"
+      service: service-api-hola
