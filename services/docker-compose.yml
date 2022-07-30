@@ -1,0 +1,16 @@
+version: "2.2"
+services:
+
+  api-hello:
+    build:
+      context: ./py-api-hello
+      dockerfile: Dockerfile
+    ports:
+      - 6780:6780
+
+  api-hola:
+    build:
+      context: ./py-api-hola
+      dockerfile: Dockerfile
+    ports:
+      - 6781:6781
