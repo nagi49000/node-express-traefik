@@ -14,7 +14,7 @@ The services brough up consist of
 - a traefik app for routing
 - a node express app for exposure
 
-The set up allows users to query the node express app, which then routes to the traefik app, which in turn routes individually to each of the Python apps.
+The set up allows users to query the node express app, which then routes to the traefik app, which in turn routes to each of the individual Python apps.
 
 The node express app can be queried using
 ```
