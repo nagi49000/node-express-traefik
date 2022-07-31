@@ -6,8 +6,12 @@ def create_app():
 
     # adding in the root path here since traefik is cack at routing
     @app.get("/api-hola/hola")
-    async def hello_world():
+    async def hola():
         return {"message": "Hola"}
+
+    @app.get("/api-hola/sub-path/adios")
+    async def adios():
+        return {"message": "Adios"}
 
     return app
 
