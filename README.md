@@ -12,7 +12,7 @@ The services brough up consist of
 - a simple python app with hello endpoints
 - another simple python app with hola endpoints
 - a traefik app for routing
-- a node express app for exposure
+- a node express app for exposure (uses a dev webserver, not a production webserver)
 
 The set up allows users to query the node express app, which then routes to the traefik app, which in turn routes to each of the individual Python apps.
 
