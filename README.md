@@ -30,5 +30,5 @@ curl http://localhost:3000/traefik/api-hola/sub-path/adios
 
 The state of traefik routing can be seen on
 ```
-http://localhost:8080/dashboard/#/
+http://localhost:8080
 ```
