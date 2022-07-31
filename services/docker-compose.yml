@@ -15,7 +15,6 @@ services:
     image: docker.io/traefik:latest
     ports:
       - 8080:8080
-      - 80:80
     volumes:
       - ./traefik/:/etc/traefik/
     depends_on:
